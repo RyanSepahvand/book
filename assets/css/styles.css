@@ -984,13 +984,14 @@ font-size: 20px;
     height: 30px;
   }
 
-.dropdown {
-  top: auto;
-  bottom: 100%; /* Position dropdown above */
-  left: 0; /* Align dropdown to the right side */
-  width: 180px;
-  height: 100%;
-}
+  .dropdown {
+    top: auto; /* Reset top position */
+    bottom: 100%; /* Position dropdown above */
+    left: auto; /* Reset left position */
+    right: 0; /* Align dropdown to the right side */
+    width: 180px;
+    height: 100%;
+  }
 
 /* Dropdown items */
 .dropdown__item {
