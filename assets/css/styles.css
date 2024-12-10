@@ -985,9 +985,9 @@ font-size: 20px;
   }
 
   .dropdown {
-    top: -250px; /* Start above the nav item */
+    top: -270px; /* Start above the nav item */
     left: 0; /* Align the dropdown to the right */
-    width: 180px;
+    width: 200px;
   }
 
 /* Dropdown items */
