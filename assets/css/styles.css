@@ -985,20 +985,9 @@ font-size: 20px;
   }
 
   .dropdown {
-    top: -270px; /* Start above the nav item */
+    top: -280px; /* Start above the nav item */
     left: 0; /* Align the dropdown to the right */
-    width: 200px;
-  }
-
-/* Dropdown items */
-  .dropdown__item {
-  flex: 1 1 33%; /* Each item takes up 33% of the width for three columns */
-  padding: 5px;
-  text-align: left;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.2s, transform 0.2s; /* Smooth transitions */
+    width: 160px;
   }
 
   .new__card {
