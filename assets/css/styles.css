@@ -984,10 +984,31 @@ font-size: 20px;
     height: 30px;
   }
 
+  
   .dropdown {
-    top: -280px; /* Start above the nav item */
-    left: 0; /* Align the dropdown to the right */
-    width: 160px;
+    bottom: 100%; /* Position the dropdown above the nav item */
+    top: auto; /* Ensure the dropdown doesn't conflict with top positioning */
+    left: 0; /* Align dropdown to the right */
+    transform: translateY(100%); /* Start below */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth animation */
+    opacity: 0; /* Initially invisible */
+  }
+
+  .nav__item:hover .dropdown {
+    transform: translateY(0); /* Slide into position */
+    opacity: 1; /* Fade in */
+  }
+
+  /* Keyframes for the drop-up animation */
+  @keyframes dropup-slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(100%); /* Start below the nav item */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Slide up into position */
+    }
   }
 
   .new__card {
